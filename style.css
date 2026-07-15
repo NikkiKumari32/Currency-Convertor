@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #cabaf4;
+}
+
+.container {
+    background: #fff;
+    width: 380px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #211991;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+.amount p,
+.from p,
+.to p {
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+form input {
+    border: 1px solid lightgray;
+    height: 3rem;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.select-container img {
+    width: 32px;
+    margin-right: 8px;
+}
+
+.select-container select {
+    width: 100%;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.swap {
+    font-size: 1.5rem;
+    color: #010109;
+    cursor: pointer;
+    margin-top: 22px;
+    transition: transform 0.3s;
+}
+
+.swap:hover {
+    transform: rotate(180deg);
+}
+
+.msg {
+    text-align: left;
+    margin: 1.8rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #02010a;
+}
+
+form button {
+    height: 3rem;
+    background: #2f2a6d;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #150f6e;
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 95%;
+    }
+
+    .dropdown {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .swap {
+        transform: rotate(90deg);
+        margin: 0;
+    }
+
+    .swap:hover {
+        transform: rotate(270deg);
+    }
+}
